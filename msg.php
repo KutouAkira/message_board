@@ -63,7 +63,7 @@ class msg{
     }
 
     public function delmsg($id){
-        if (!preg_match("/^[0-9]/",$id)){
+        if (!preg_match("/^[0-9]*$/",$id)){
             echo "<script>alert(\"No, not good.\");location.href='/'</script>";
             exit();
         }

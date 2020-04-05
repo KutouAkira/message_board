@@ -89,7 +89,7 @@ $pwd = $_POST['pwd'];
 if(empty($name) || empty($pwd)){
     echo "<script>alert(\"用户名或密码为空\")</script>";
     exit();
-}elseif (!preg_match("/^[A-Za-z0-9_]/",$name)){
+}elseif (!preg_match("/^[A-Za-z0-9_]*$/",$name)){
     echo "<script>alert(\"日别人是不好的哦\")</script>";
     exit();
 }elseif ($name === 'hikawa'){
